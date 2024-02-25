@@ -4,12 +4,12 @@
 def search4vowels(phrase: str) -> set:
     """Return any vowels found in a supplied phrase."""
     vowels = set('aeiou')
-    return vowels.intersection(set(phrase))
+    return vowels.intersection(set(phrase.lower()))
 
 
 def search_4_letters(phrase: str, letters: str = 'aeiou') -> set:
     """Return any letters found in a supplied phrase."""
-    return set(letters).intersection(set(phrase))
+    return set(letters.lower()).intersection(set(phrase.lower()))
 
 
 # mi_phrase = input("Introduzca una frase: ")
